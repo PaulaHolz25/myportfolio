@@ -201,27 +201,13 @@ input:focus, textarea:focus{ border-color: var(--primary) }
 /* RESPONSIVE TIMELINE (Mobile) */
 @media (max-width: 700px) {
   .timeline-horizontal {
-    display: block;
-    overflow: visible;
-
-    border-top: none;
-    border-bottom: none;
-    border-left: 3px solid #ccc;
-
-    padding-left: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    overflow-x: auto; 
+    white-space: nowrap;
   }
-
   .timeline-event {
-    width: auto;
-    margin-bottom: 2rem;
-    padding-top: 0;
-  }
-
-  .timeline-event::before {
-    top: 2px;
-    left: -23px;
+    width: 200px; 
   }
 }
 .linkbutton {
